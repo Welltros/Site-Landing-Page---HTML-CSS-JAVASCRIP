@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  /*remove os traços de link das palavras*/
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  width: 100vw;
+  /*Width e height, pega toda largura e altura da tela*/
+  height: 100vh;
+  font-size: 62.5%;
+  /*Fica mais facil para ajustar na responsividade esse tamanho de fonte*/
+  overflow-x: hidden;
+  /* Faz com que a pagina não tenha a barra de rolagem em baixo somente na lateral*/
+}
+
+/* Menu */
+
+.content {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  /* Alinha tudo ao lado*/
+  align-items: center;
+  background-color: #1f1e1f;
+  position: fixed;
+  /*Deixa o menu fixo no local mesmo rolando a barra de rolagem*/
+  padding-left: 30rem;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+  /*Efeito de passar mouse por cima virar maozinha*/
+  display: flex;
+  /*Alinha ao lado*/
+  align-items: center;
+}
+
+/*Altera o css do H3 da pagina inicial*/
+.logo h3 {
+  color: white;
+  font-size: 1.6;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.content .list-menu {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Alinha na Horizontal com espaço entre os itens*/
+}
+
+.content .list-menu li a {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 200ms ease-in;/* Efeito transição ao passar o mouse*/
+}
+/*Efeito hover ao passar o mouse por cima*/
+.content .list-menu li a:hover {
+  background-color: #3333;
+ border-bottom: 4px solid #ffc506;/*Coloca uma linha amarela em baixo do selecionado*/
+  color: #ffc506; /*Cor da letra*/
+
+}
+
+/* first-section para estilizar os textos e botões na pagina inicial */
+
+.first-section{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./img/fundo.jpg);
+    /* No Background a cima foi adicionado linear-gradiente para adicionar um overlay em cima da imagem com um fundo mais escuro*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position-y: 10px; Posição da imagem no eixo Y;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .conteudo-principal{
+  display: flex;  /*Organizar um do lado do outro*/
+  flex-direction: column; /*Organiza em colunas*/
+  align-items: center; /* Alinha horizontalmente*/
+  justify-content: center; /*Alinha Verticalmente*/
+  margin-bottom: 30rem;
+}
+
+.first-section h1 {
+  text-align: center; /*Alinha o texto ao centro*/
+  margin-left: 10rem;
+  color: #ffc506;
+  font-size: 6rem;
+  text-transform: uppercase; /*Deixa tudo em maiusculo*/
+}
+
+.first-section h2{
+  color: rgb(177 ,177 , 177);
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  }
+
+.btn button{
+  width: 230px;
+  height: 60px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #ffc506;
+  border-radius: 10px;
+  color: black;
+  font-weight: 700;
+  transition: all 400ms ease-in;
+}
+ 
+
+.btn button:hover{
+  border: 1px solid #ffc506;
+  background-color: transparent;
+  color:#ffc506;
+}
+
+/*Alterando a div enteira dos botões*/
+.btn {
+   width: 500px; /*faz com que os botões criem espaço entre eles*/
+   display: flex;
+   justify-content: space-between;
+   }
+
+   /* Sobre nos*/
+
+.sobre-nos{
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+.sobre-nos img{
+    width: 300px;
+    height: 250px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155,155,155);
+   }
+   /* Com o codigo a baixo, o main ficar ao lado da img*/
+.main{
+    display: flex;
+    justify-content: space-between; 
+}
+
+/*Alerendo a div contentsobre*/
+.contentsobre {
+    display: flex;
+    flex-direction: column; /*Organiza em colunas um em cima do outro*/
+    align-items: center;
+    justify-content: center;   
+}
+
+.contentsobre h2{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentsobre p{
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px; /*Ao adicionar Width, 
+    informei que o tamanho maximo da caixa para o
+    texto e de 600ox, desse jeito o texto não impurrara
+    qualquer objeto que estiver ao seu lado */
+}
