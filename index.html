@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> <!--importação do boostrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!--importação do boostrap-->
   <title>WMPrintty</title>
 </head>
+
 <body>
   <header class="content"> <!--Chama a classe do css content-->
     <div class="logo">
@@ -14,7 +17,7 @@
       <h3>WMPrintty</h3>
     </div>
     <!--Foi Criado uma nav com uma lista para os menus -->
-    <nav> 
+    <nav>
       <ul class="list-menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Sobre nós</a></li>
@@ -26,28 +29,29 @@
       </ul>
     </nav>
   </header>
-<!--Foi criado uma sessão para os texto na pagina e os botões com as classes do css -->
+  <!--Foi criado uma sessão para os texto na pagina e os botões com as classes do css -->
   <section class="first-section">
     <div class="conteudo-principal">
-      <h1>"Economize sem comprometer a qualidade.<br/> Opte pela locação de impressoras."</h1>
+      <h1>"Economize sem comprometer a qualidade.<br /> Opte pela locação de impressoras."</h1>
       <h2>Chega de problemas com sua impressora</h2>
       <div class="btn">
         <button class="reservar">Reserve a sua!</button>
         <button class="proposta">Solicite sua proposta!</button>
-      </div>          
+      </div>
     </div>
     </div>
   </section>
-  <section class="sobre-nos" id="sobrenos"><!--so digitar section.sobre-nos#sobrenos que ja cria a classe e o id automaticamente-->
+  <section class="sobre-nos" id="sobrenos">
+    <!--so digitar section.sobre-nos#sobrenos que ja cria a classe e o id automaticamente-->
     <div class="main">
       <div class="contentsobre">
-       <h2>Sobre nós</h2>
-        <p>Na WMPrintty, estamos comprometidos em fornecer serviços excepcionais 
-        de outsourcing de impressora desde nossa fundação em 2020. Nosso foco 
-        incansável na excelência, inovação e satisfação do cliente nos tornou 
-        uma referência na indústria de gestão de impressões.
-        Estamos prontos para enfrentar desafios e fornecer soluções de 
-        impressão excepcionais que melhoram a eficiência e a produtividade das empresas.</p>
+        <h2>Sobre nós</h2>
+        <p>Na WMPrintty, estamos comprometidos em fornecer serviços excepcionais
+          de outsourcing de impressora desde nossa fundação em 2020. Nosso foco
+          incansável na excelência, inovação e satisfação do cliente nos tornou
+          uma referência na indústria de gestão de impressões.
+          Estamos prontos para enfrentar desafios e fornecer soluções de
+          impressão excepcionais que melhoram a eficiência e a produtividade das empresas.</p>
       </div>
       <div class="img-impressora">
         <img src="./img/imagem sobre.jpg" alt="">
@@ -55,8 +59,90 @@
     </div>
   </section>
 
+
+  <!--Equipamentos-->
   <section class="equipamentos" id="equipamentos">
     <h2>Equipamentos</h2>
+    <div class="itens-equipamentos">
+      <div>
+        <img src="./img/brother.png" alt="brother 6902">
+        <div class="info">
+          <h3>Brother mfc-l6902dw</h3>
+          <h4>Velocidade Máx <span>52/50</span></h4>
+          <h4>Impressão até <span> A4</span></h4>
+          <h4>Impreme Cor <span>Não</span></h4>
+          <button class="pedir">Reservar</button>
+        </div>
+      </div>
+      <div>
+        <img src="./img/kyocera.png" alt="Kyocera">
+        <div class="info">
+          <h3>Kyocera M3655idn</h3>
+          <h4>Velocidade Máx <span>(ppm): 55</span></h4>
+          <h4>Impressão <span>(Oficio/A4)</span></h4>
+          <h4>Impreme Cor <span>Não</span></h4>
+          <button class="pedir">Reservar</button>
+        </div>
+
+      </div>
+      <div>
+        <img src="./img/epson.png" alt="">
+        <div class="info">
+          <h3>Epson L3250</h3>
+          <h4>Wi-Fi <span>Sim</span></h4>
+          <h4>Impressão <span>(carta/A4)</span></h4>
+          <h4>Impreme Cor <span>Sim</span></h4>
+          <button class="pedir">Reservar</button>
+        </div>
+
+      </div>
+      <div>
+        <img src="./img/hp.png" alt="hp">
+        <div class="info">
+          <h3>Hp M428FDW</h3>
+          <h4>Velocidade Máx <span>(ppm): 38</span></h4>
+          <h4>Impressão <span>(carta/A4)</span></h4>
+          <h4>Impreme Cor <span>Sim</span></h4>
+          <button class="pedir">rESERVAR</button>
+        </div>
+
+      </div>
+      <div>
+        <img src="./img/minolta.png" alt="">
+        <div class="info">
+          <h3>Bizhub C300i</h3>
+          <h4>Velocidade Máx <span>(ppm): 30</span></h4>
+          <h4>Impressão <span>Até A3</span></h4>
+          <h4>Impreme Cor <span>Sim</span></h4>
+          <button class="pedir">Reservar</button>
+        </div>
+      </div>
+    </div>
   </section>
+  <section class="contatos" id="contatos">
+    <h3>Contatos</h3>
+    <div class="contatos-secao">
+      <div>
+        <i class="bi bi-telephone"></i><!--Adicionado o icone de telefone que foi chamado pela class do bootstrap adicionado na linha 8-->
+        <span>(21) 4138-1749</span>
+      </div>
+      <div>
+        <i class="bi bi-instagram"></i><!--Adicionado o icone de telefone que foi chamado pela class do bootstrap adicionado na linha 8-->
+        <span>(21) 4138-1749</span>
+      </div>
+      <div>
+        <i class="bi bi-facebook"></i><!--Adicionado o icone de telefone que foi chamado pela class do bootstrap adicionado na linha 8-->
+        <span>(21) 4138-1749</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="rodape">
+      <i class="bi bi-c-circle"></i>
+      <span>Desenvolvido por Wellington M Silva.</span>
+    </div>
+  </footer>
 </body>
+
 </html>
